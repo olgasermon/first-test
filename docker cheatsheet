@@ -1,0 +1,11 @@
+docker commands 
+
+
+#current containers status:
+docker -ps
+
+#start container:
+docker start <container name>
+
+#find ip address of a container
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
