@@ -1,7 +1,10 @@
-Clickstream Data Analysis Pipeline Using KSQL (Docker)
+##Clickstream Data Analysis Pipeline Using KSQL (Docker)
+
+#start the containers
 
 
-Create the Clickstream Data
+
+#Create the Clickstream Data
 docker-compose exec kafkacat \
         kafkacat -b kafka:29092 -C -c 10 -K: \
         -f '\nKey  : %k\t\nValue: %s\n' \
